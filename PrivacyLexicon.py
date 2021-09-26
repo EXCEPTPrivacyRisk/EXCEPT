@@ -1,0 +1,342 @@
+
+
+seeds_cate = {
+    "birthday": ["birth", "birthdate", "birthday", "dateofbirth", "dob"],
+    "birthmonth": [],
+    "birthyear": ["birthyear"],
+    "birthplace": ["birthplace", "placeofbirth"],
+    "username": [
+        "firstname", "lastname", "middlename", "username", "nick", "nickname",
+        "mname", "newname", "newusername", "secondname", "truename", "uname"
+    ],
+    "age": ["age", "agerange"],
+    "school": ["educschool", "educationschool"],
+    "job": ["profession"],
+    "income": ["salary"],
+    "marriage": [],
+    "bloodtype": ["bloodtype"],
+    "wantchild": [],
+    "smoking": [],
+    "drinking": [],
+    "vip": [],
+    "name": [
+        "name", "aliasname", "displayname", "fname", "fullname", "accountname",
+        "lname"
+    ],
+    "height": ["height"],
+    "weight": ["weight"],
+    "password": [
+        "newpassword", "pass", "passcode", "passphrase", "passport", "passwd",
+        "password", "pwd", "oldpassword", "passwrd", "curpassword",
+        "newpasswordfield", "loginpassword", "signinpass", "loginpwd"
+    ],
+    "phone": [
+        "mobile", "cell", "phone", "phonenumber", "telephone", "phonenum",
+        "cellnumber", "contactnumber"
+    ],
+    "mail": [
+        "email", "emailaddress", "mail", "useremail", "voicemail", "gmail",
+        "emailid"
+    ],
+    "longitude": ["longitude"],
+    "latitude": ["latitude"],
+    "geo": [
+        "location", "currentlocation", "locationaddress", "loc",
+        "celllocation", "inferredlocation"
+    ],
+    "ip": ["clientip", "ipaddress", "serverip"],
+    "address": ["address"],
+    "distance": ["distance", "movementdistance"],
+    "license": ["license"],
+    "key_secret": ["appsecret", "secret"],
+    "deviceid": ["deviceid", "deviceidentifier", "deviceuuid"],
+    "androidid": ["androidid"],
+    "imei": ["imei"],
+    "pin": ["pin"],
+    "crenditials": [
+        "cardno", "cardid", "cardidnumber", "cardnum", "cardnumb",
+        "cardnumber", "creditcardnumber"
+    ],
+    "invitecode": [],
+    "validationcode": [],
+    "fbid": [],
+    "twitterid": ["twitterid"],
+    "twitterurl": [],
+    "weixin": [],
+    "qq": [],
+    "whatsapp": [],
+    "paypal": ["paypal"],
+    "icq": [],
+    "amazon": ["amazonid"],
+    "baidu": [],
+    "instagram": [],
+    "microsoft": [],
+    "telegram": [],
+    "tiktok": [],
+    "youtube": [],
+    "linkedin": [],
+    "weibo": [],
+    "googleaccount": ["googleid"],
+    "account": ["account", "accountid"],
+    "balance": [],
+    "zodiac": [],
+    "constellation": [],
+    "image": [],
+    "altitude": [],
+    "gender": ["gender", "sex", "sexuality"],
+    "race": ["race", "racial"],
+    "language": [],
+    "color": [],
+    "place": [],
+    "continent": [],
+    "country": ["country", "nationality"],
+    "street": ["street", "streetaddress", "streetaddr"],
+    "province": ["province"],
+    "city": ["city", "cityname"],
+    "town": [],
+    "company": ["company"],
+    "religion": ["religion", "religious"],
+    "zip": ["zip", "zipcode", "garagingzip", "statezip"],
+    "timezone": [],
+    "timestamp": ["updatetime"],
+    "date": ["createdate", "expirationdate"],
+    "bodytype": [],
+    "hairlength": [],
+    "bank": [],
+    "profession": [],
+    "citizen": [],
+    "employment": ["employment"],
+    "experience": ["education"],
+    "home": ["homeaddr", "homeaddress"],
+    "holder": [],
+    "finger_print": ["fingerprint"],
+    "family": [],
+    "state": ["online"],
+    "level": [],
+    "favorite": ["favorite"],
+    "food": [],
+    "vehicle": [],
+    "membershiptype": [],
+    "reputation": [],
+    "appplatfrom": [],
+    "areacode": [],
+    "areaid": [],
+    "doorcode": [],
+    "userid": ["userid"],
+    "speed": [],
+    "habit": [],
+    "tax": [],
+    "transaction": ["billpay", "payment", "transaction"],
+    "interest": [],
+    "health": ["health"],
+    "wish": ["wishlist"],
+    "token": ["apptoken", "oauthtoken"]
+}
+
+dropped = [
+        "card", "code", "currency", "id", "identifier", "linenumber", "middle",
+        "price", "private", "state", "status", "uid", "accountinfo",
+        "accountinformation", "accountnumber", "addressbook", "adid",
+        "advertisingid", "advertisingidentity", "appchannel", "appid",
+        "appkey", "applist", "appstarttimestamp", "appversion", "avatar",
+        "bifollowecount", "biometricidentifier", "bloodpressure",
+        "bluetoothaddress", "bmi", "bodyfat", "bodymeasurement",
+        "bodytemperature", "browsehistory", "bssid", "callrecord", "cardhold",
+        "cardmember", "cardtype", "carrier", "ccn", "ccv", "chatrecord",
+        "comment", "compass", "connectioninfo", "connectioninfomation",
+        "contact", "credit", "creditcard", "criminalrecord", "debit",
+        "devicenumber", "deviceos", "deviceusage", "driverlicense",
+        "educationexperience", "educationyear", "educschooltype", "educyear",
+        "emailhistory", "expiration", "expirationday", "expire",
+        "expiringdate", "faceprint", "favouritcount", "favourite",
+        "favouritecount", "followee", "follower", "friend", "friendship",
+        "friendslist", "hardwareid", "heartrate", "hobby", "hobbies", "imsi",
+        "installedapps", "interactions", "interestedin", "internetprotocal",
+        "jobtitle", "locationsearch", "lockpin", "logevent", "login",
+        "loginrecord", "loglogin", "macaddress", "marital", "merchant",
+        "messagecount", "messagecontent", "mobilepay", "networktype",
+        "nutrition", "oftenvisitpositions", "pay", "payee", "payeename",
+        "personalinformation", "philosophical", "philosophy", "political",
+        "politics", "polotical", "preferredcontact", "productdescription",
+        "productname", "profile", "relationshipstatus", "resident",
+        "residential", "routing", "runtime", "schooltype", "screensize",
+        "sdkruntimelen", "searchqueries", "secrettype", "securitycode",
+        "securityset", "serial", "serialno", "serverhost", "sharecontent",
+        "sharecount", "shipping", "sim", "simserial", "simserialnumber", "sns",
+        "snsuid", "snsuser", "socialidentifier", "socialmedia",
+        "socialmediaidentifier", "socialsecurity", "socialsecuritycode",
+        "socialsecuritynumber", "ssc", "ssid", "ssn", "ssosdkversion",
+        "statuscount", "stepcount", "subscribeid", "subscriberid",
+        "thirdpartyid", "toptask", "transcript", "updatedate", "user",
+        "userprofile", "userproperties", "visitedplace", "voiceprint", "vpin",
+        "workcompany", "workemploy", "workenddate", "workexperience",
+        "worknumber", "workposition", "workstartdate"
+    ]
+
+privacy_set = {
+    'birthday': [
+        'birthday', 'birthdate', 'birth', 'dayofbirth', 'datebirth',
+        'dateofbirth', 'dob'
+    ],
+    'birthmonth': ['birthmonth'],
+    'birthyear': ['birthyear'],
+    'birthplace': ['birthplace'],
+    'username':
+    ['realname', 'firstname', 'middlename', 'lastname', 'username'],
+    'age':
+    ['age', 'agerange', 'agemaxage', 'maxage', 'agemax', 'minage', 'agemin'],
+    'school': ['academy', 'school', 'university', 'college', 'universityname'],
+    'job': [
+        'occupation', 'career', 'job', 'profession', 'work', 'profession',
+        'expertise'
+    ],
+    'income': [
+        'income', 'videoincome', 'annualincome', 'benefit', 'salary', 'wage',
+        'earnings'
+    ],
+    'marriage': ['marriage', 'marry'],
+    'bloodtype': ['bloodtype'],
+    'wantchild': ['wantchild'],
+    'smoking': ['smoking'],
+    'drinking': ['drinking'],
+    'vip': ['vip'],
+    'name': ['name'],
+    'height': ['height'],
+    'weight': ['weight'],
+    'password': [
+        'passphrase', 'passcode', 'pwd', 'userpassword', 'forgotpassword',
+        'resetpassword', 'userpwd', 'passwd', 'passport', 'password', 'pass',
+        'newpassword', 'confirmpassword'
+    ],
+    'phone': [
+        'phoneno', 'homephone', 'smartphones', 'mobile', 'telephony',
+        'telephone', 'phone', 'phonecode', 'telphone', 'phonebrand',
+        'phonenumber', 'bindphone', 'cellphone', 'mobileno', 'workphone',
+        'cell'
+    ],
+    'mail': [
+        'contactemail', 'useremail', 'mailbox', 'email', 'emailaddress',
+        'memberemail', 'mail', 'voicemail'
+    ],
+    'longitude': ['longitude', 'lon', 'lng'],
+    'latitude': ['latitude', 'lat'],
+    'geo': [
+        'gps', 'location', 'geolocation', 'lastlocation', 'geoplace', 'geoip',
+        'geopoint'
+    ],
+    'ip': ['ipaddr', 'partnership', 'ipaddress', 'ip', 'clientip'],
+    'address': ['address', 'addrdetail'],
+    'distance': ['distance'],
+    'license': ['license', 'licensing'],
+    'key_secret': ['appkey', 'authkey', 'secretkey', 'clientsecret'],
+    'deviceid': ['deviceid'],
+    'androidid': ['androidid'],
+    'imei': ['imei'],
+    'pin': ['pin', 'pincode'],
+    'number': ['orderno', 'cardno'],
+    'invitecode': ['invitecode', 'invitationcode'],
+    'validationcode': ['validationcode', 'verifycode'],
+    'fbid': ['fbid', 'facebookid', 'facebook', 'fb', 'fbuid'],
+    'twitterid': ['twitterid', 'twitter'],
+    'twitterurl': ['twitterurl'],
+    'weixin': ['weixin', 'wechat'],
+    'qq': ['qq'],
+    'whatsapp': ['whatsapp'],
+    'paypal': ['paypal'],
+    'icq': ['icq'],
+    'amazon': ['amazon'],
+    'baidu': ['baidu'],
+    'instagram': ['instagram'],
+    'microsoft': ['microsoft'],
+    'telegram': ['telegram'],
+    'tiktok': ['tiktok'],
+    'youtube': ['youtube'],
+    'linkedin': ['linkedin'],
+    'weibo': ['weibo'],
+    'googleaccount': ['googleaccount'],
+    'account': ['account', 'subaccount', 'accountid'],
+    'balance': ['balance'],
+    'zodiac': ['zodiac'],
+    'constellation': ['constellation'],
+    'image': [
+        'headpic', 'profilephoto', 'userpic', 'headphoto', 'profileimage',
+        'profilepic', 'userphoto', 'headimgurl', 'headimage', 'userimage',
+        'userimgs', 'profilepicture', 'headimg', 'imglist', 'avatarurl',
+        'fbphoto', 'faceimg'
+    ],
+    'altitude': ['altitude'],
+    'gender': ['sex', 'sexuality', 'gender', 'sexid'],
+    'race': ['race', 'ethnicity'],
+    'language': ['language', 'languagevalue', 'languages'],
+    'color': ['haircolor', 'eyecolor'],
+    'place': [
+        'area', 'userarea', 'place', 'district', 'region', 'placename',
+        'geoname', 'hometown'
+    ],
+    'continent': ['continent'],
+    'country': ['nation', 'nationality', 'country'],
+    'street': ['street', 'addressstreet', 'streetaddress'],
+    'province': ['province'],
+    'city': ['city', 'cityname'],
+    'town': ['town'],
+    'company': [
+        'companytitle', 'organization', 'organisation', 'division', 'company',
+        'office'
+    ],
+    'religion': ['religion', 'faith', 'belief'],
+    'zip': ['zip', 'zipcd', 'zipcode', 'postcode', 'postalcode'],
+    'timezone': ['timezone', 'timezoneid'],
+    'timestamp': [
+        'expiretime', 'visittime', 'createtime', 'expirestime', 'expiredtime',
+        'regtime', 'endtime', 'publishtime', 'arrivaltime', 'starttime',
+        'invitetime', 'updatetime', 'logintime', 'lastlogin', 'lastonline'
+    ],
+    'date': ['createdate', 'expirationdate'],
+    'bodytype': ['bodytype'],
+    'hairlength': ['hairlength'],
+    'bank': ['bank', 'banking'],
+    'profession': ['expertise', 'certification', 'certificate'],
+    'citizen': ['citizenship', 'citizen'],
+    'employment': ['employee', 'employment', 'employer'],
+    'experience': ['education', 'training', 'experience'],
+    'home': ['house', 'home', 'residence', 'residency'],
+    'holder': ['accountholder', 'cardholder'],
+    'finger_print': ['devicefingerprint', 'fingerprint'],
+    'family': ['family', 'familyid'],
+    'state': ['onlinestate', 'userstate', 'online', 'contactstatus'],
+    'level': ['userlevel', 'level', 'viplevel', 'vipgrade'],
+    'favorite': ['favorite', 'favorites'],
+    'food': ['food', 'diet'],
+    'vehicle': ['vehicle'],
+    'membershiptype': ['membershiptype'],
+    'reputation': ['reputation'],
+    'appplatfrom': ['appplatfrom', 'devicetype', 'system', 'client'],
+    'areacode':
+    ['areacode', 'countrycode', 'provincecode', 'citycode', 'geocode'],
+    'areaid': ['countryid', 'cityid', 'locationid', 'areaid', 'addressid'],
+    'doorcode': ['doorcode'],
+    'userid': ['loginid', 'loginuserid', 'useruuid', 'useridx'],
+    'speed': ['speed'],
+    'habit': ['habit'],
+    'tax': ['tax', 'shippingtax'],
+    'transaction': ['transaction', 'billpay', 'expense', 'payment'],
+    'interest': ['interest'],
+    'health': ['health'],
+    'wish': ['wish'],
+    'token': ['logintoken', 'facebooktoken', 'fbtoken', 'devicetoken']
+}
+
+def count():
+    cate_in_seeds = 0
+    for k, v in seeds_cate.items():
+        if v:
+            cate_in_seeds += 1
+    print("Collected privacy has {} types".format(cate_in_seeds))
+    print("After Correlation Analysis, the privacy lexicon has {} types".format(len(seeds_cate)))
+
+
+
+
+
+if __name__ == '__main__':
+    count()
